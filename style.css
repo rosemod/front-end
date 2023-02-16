@@ -1,0 +1,120 @@
+/*--- Curso: Desarrollo Front-End (Nivel 2) ED.2022       ---*/
+/*--- Ejercicio final: formulario para crear una cuenta   ---*/
+/*--- Archivo css con el estilo de la página web          ---*/
+/*--- Última modificación: 16/02/23                       ---*/
+/*--- Autora: Rosa                                        ---*/
+
+/*Cambia los parámetros por defecto de la página*/
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(36, 41, 51);
+}
+body{
+    margin-top: 5%;
+    margin-left:30%;
+    font-family: sans-serif;
+    color: rgb(175, 189, 229);
+}
+
+/*Cambia los parámetros por defecto del formulario*/
+form{
+    background-color: rgb(47, 54, 68);
+    width: 400px;
+    border: 8px;
+    border-color: rgb(175, 189, 229);
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+form div input{
+    width: 335px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 30px;
+    border-color: rgb(175, 189, 229);
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*Cambia los parámetros por defecto del botón*/
+button{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(108,99,255);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline:black;
+    color: white;
+    font: bold;
+}
+
+/*Cambia los parámetros por defecto de los iconos*/
+form div img{
+    position: absolute;
+    padding: 12px 60px;
+}
+.success-icon,
+.error-icon{
+    right: 0;
+    opacity: 0;
+}
+
+/*Cambia los parámetros por defecto del mensaje de error*/
+.error,
+.error2{
+    color:red;
+    font-size:small;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-activo,
+.error2-activo{
+    color:red;
+    font-size:small;
+    margin-top: 5px;
+    display: block;
+}
+
+/*Cuando el campo es correcto*/
+.formR_grupo-correcto .success-icon{
+    position: absolute;
+    padding: 12px 60px;
+    right: 0;
+    opacity: 1;
+}
+.formR_grupo-correcto .error-icon{
+    position: absolute;
+    padding: 12px 60px;
+    right: 0;
+    opacity: 0;
+}
+
+
+/*Cuando el campo es incorrecto*/
+.formR_grupo-incorrecto .success-icon{
+    position: absolute;
+    padding: 12px 60px;
+    right: 0;
+    opacity: 0;
+}
+.formR_grupo-incorrecto .error-icon{
+    position: absolute;
+    padding: 12px 60px;
+    right: 0;
+    opacity: 1;
+}
+.formR_grupo-incorrecto .error-activo{
+    display: block;
+}
+.formR_grupo-incorrecto .error2-activo{
+    display: block;
+}
