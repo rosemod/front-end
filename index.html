@@ -1,0 +1,75 @@
+<!--
+    Curso: Desarrollo Front-End (Nivel 2) ED.2022    
+    Ejercicio final: formulario para crear una cuenta 
+    Documento HTML con los datos del formulario
+    Última modificación: 14/02/23
+    Autora: Rosa
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!--Cabecera del documento-->
+        <meta charset="UTF-8">
+        <title>Actividad final Rosa</title>
+        <link rel="stylesheet" href="style.css"> <!--link al archivo de estilo-->
+    </head> 
+    <body> <!--Cuerpo del documento-->
+        <div class="Caja"> <!--Divide cada apartado del documento-->
+            <form id="formR" class="formR" action="">
+                
+                <div class="Cabecera">
+                    <h2>Crear una cuenta</h2>
+                </div>
+                <!--Campo del formulario para el nombre-->
+                <div class="formR_grupo" id="grupo_nombre"> <!--id y class son útiles para referenciar en css y js-->
+                    <label for="nombre" class="formR_label">Nombre</label> 
+                    <div class="formR_grupo-input">
+                    <input type="text" id="nombre" class="formR_input" name="nombre"/> <!--input para añadir un campo "text" donde escribir-->
+                    <img class="success-icon" src="images/success-icon.svg"> <!--imagen de tick verde-->
+                    <img class="error-icon" src="images/error-icon.svg"> <!--imagen de cruz roja-->
+                    </div>
+                    <div class="error">No puede contener números</div> <!--Mensaje de error 1-->
+                    <div class="error2">Rellene este campo</div> <!--Mensaje de error 2-->
+                </div>
+                <!--Campo del formulario para el email-->
+                <div class="formR_grupo" id="grupo_email">
+                    <label for="email" class="formR_label">E-mail</label>
+                    <div class="formR_grupo-input">
+                    <input type="email" id="email" class="formR_input" name="email"/> <!--input 'email' con sus propias características-->
+                    <img class="success-icon" src="images/success-icon.svg">
+                    <img class="error-icon" src="images/error-icon.svg">
+                    </div>
+                    <div class="error">E-mail inválido</div>
+                    <div class="error2">Rellene este campo</div>
+                </div>
+                <!--Campo del formulario para la contraseña-->
+                <div class="formR_grupo" id="grupo_clave01">
+                    <label for="clave01" class="formR_label">Clave</label>
+                    <div class="formR_grupo-input">
+                    <input type="password" id="clave01" class="formR_input" name="clave01"/>
+                    <img class="success-icon" src="images/success-icon.svg">
+                    <img class="error-icon" src="images/error-icon.svg">
+                    </div>
+                    <div class="error">La contraseña debe tener entre 5 y 8 caracteres</div>
+                    <div class="error2">Rellene este campo</div>
+                </div>
+                <!--Campo del formulario para confirmar la contraseña-->                
+                <div class="formR_grupo" id="grupo_clave02">
+                    <label for="clave02" class="formR_label">Confirme su clave</label>
+                    <div class="formR_grupo-input">
+                    <input type="password" id="clave02" class="formR_input" name="clave02"/>
+                    <img class="success-icon" src="images/success-icon.svg">
+                    <img class="error-icon" src="images/error-icon.svg">
+                    </div>
+                    <div class="error">Las contraseñas no coinciden</div>
+                    <div class="error2">Rellene este campo</div>
+                </div>
+                <!--Campo del formulario incluir el botón de enviar-->
+                <div>
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="index.js"></script> <!--Enlace al documento de js que va a procesar los datos-->
+</html>
